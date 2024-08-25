@@ -26,7 +26,7 @@ class SpecialUpdaterAdminController extends CRUDController
   #[\Override]
   public function listAction(Request $request): Response
   {
-    return $this->renderWithExtraParams('Admin/DB_Updater/admin_special_updater.html.twig', [
+    return $this->render('Admin/SystemManagement/DbUpdater/Special.html.twig', [
       'updateSpecialUrl' => $this->admin->generateUrl('update_special'),
     ]);
   }

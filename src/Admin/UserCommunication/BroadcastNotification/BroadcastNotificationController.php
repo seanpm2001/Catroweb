@@ -25,7 +25,7 @@ class BroadcastNotificationController extends CRUDController
   #[\Override]
   public function listAction(Request $request): Response
   {
-    return $this->renderWithExtraParams('Admin/Tools/broadcast_notification.html.twig');
+    return $this->render('Admin/UserCommunication/Broadcast.html.twig');
   }
 
   public function sendAction(Request $request): Response

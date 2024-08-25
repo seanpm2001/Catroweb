@@ -27,7 +27,7 @@ class FlavorsAdminController extends CRUDController
   #[\Override]
   public function listAction(Request $request): Response
   {
-    return $this->renderWithExtraParams('Admin/DB_Updater/admin_flavors.html.twig', [
+    return $this->render('Admin/SystemManagement/DbUpdater/Flavors.html.twig', [
       'action' => 'update_flavors',
       'updateFlavorsUrl' => $this->admin->generateUrl('update_flavors'),
     ]);
